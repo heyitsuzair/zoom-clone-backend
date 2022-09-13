@@ -13,7 +13,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
+app.get("*", function (req, res) {
   res.send("Running");
 });
 
